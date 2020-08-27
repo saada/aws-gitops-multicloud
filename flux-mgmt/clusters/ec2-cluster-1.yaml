@@ -65,7 +65,7 @@ metadata:
 spec:
   template:
     spec:
-      iamInstanceProfile: control-plane.cluster-api-provider-aws.sigs.k8s.io
+      iamInstanceProfile: eksworkshop-admin
       instanceType: t3.large
       sshKeyName: weaveworks-workshop
 ---
@@ -101,7 +101,7 @@ metadata:
 spec:
   template:
     spec:
-      iamInstanceProfile: nodes.cluster-api-provider-aws.sigs.k8s.io
+      iamInstanceProfile: eksworkshop-admin
       instanceType: t3.large
       sshKeyName: weaveworks-workshop
 ---
